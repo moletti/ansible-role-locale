@@ -1,0 +1,9 @@
+---
+_locale_dependencies:
+  default:
+    - tzdata
+  Debian:
+    - tzdata
+    - locales
+
+locale_dependencies: "{{ _locale_dependencies[ansible_os_family] | default(_locale_dependencies['default']) }}"

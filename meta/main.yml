@@ -1,0 +1,17 @@
+galaxy_info:
+  role_name: locale
+  namespace: moletti
+  author: Leo Moletti
+  description: Base role for managing apt locales
+  license: MIT
+  min_ansible_version: "2.11"
+  platforms:
+   - name: Debian
+     versions:
+       - stretch
+       - buster
+  galaxy_tags:
+    - system
+    - locale
+
+dependencies: []

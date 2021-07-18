@@ -1,0 +1,12 @@
+argument_specs:
+  # roles/ansible-role-locale/tasks/main.yml entry point
+  main:
+    options:
+      locale:
+        type: "str"
+        default: en_US.UTF-8
+
+      locale_state:
+        type: "str"
+        default: present
+        choices: ["present", "absent"]

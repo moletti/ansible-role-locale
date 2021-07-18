@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: yes
+  roles:
+    - role: moletti.locale
+      tags: locale
